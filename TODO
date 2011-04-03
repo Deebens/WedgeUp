@@ -1,0 +1,19 @@
+WedgeUp To Do list:
+
+First initial target
+--------------------
+
+Our first milestone should be functionality for
+
+	- Parsing the supplied directory and subordinates
+	- Checksumming each provided file (using a quick algorithm)
+	- Comparing this against the previous incremental backup
+		(the first backup increments from nothing, so this should be fine regardless)
+	- Copy modified files to a subfolder in the backup destination, named by date
+	- Checksum the files stored to ensure success
+	- Update the WedgeUp database with these new checksums
+	- Store a copy of the WedgeUp database to the destination
+
+Secondary functionality should include
+
+	- A backup test suite, primarily re-checksumming a mounted dataset
